@@ -1,0 +1,6 @@
+*.class
+bin/
+.project
+proguard-project
+project.properties
+.settings/

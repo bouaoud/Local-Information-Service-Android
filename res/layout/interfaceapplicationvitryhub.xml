@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.nadir.vitryweather"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+        
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Se Géolocaliser !!"
+        android:textAppearance="@style/Titreservice" />
+
+    <ImageButton
+        android:id="@+id/mapacces"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/geolocalisation_logo" />
+
+    
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paul Armangot"
+            android:textAppearance="@style/Titreservice" />
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow>
+
+                <QuickContactBadge
+                    android:id="@+id/quickContactBadge1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/logo_ratp" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Bus 293"
+                    android:textAppearance="@style/nottitreserviceperso" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dip"
+                    android:text="Attente" android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dip"
+                    android:text="Prochain" />
+            </TableRow>
+
+            <TableRow android:id="@+id/direct_a_293" >
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dp"
+                    android:text="Choisy Sud" />
+
+                <TextView
+                    android:id="@+id/now_A_293"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textAppearance="@style/nottitreservice" />
+
+                <TextView
+                    android:id="@+id/next_A_293"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textAppearance="@style/nottitreservice" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/direct_r_293"
+                    android:layout_column="1"
+                    android:padding="3dp"
+                    android:text="Villejuif" />
+
+                <TextView
+                    android:id="@+id/now_R_293"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textAppearance="@style/nottitreservice" />
+
+                <TextView
+                    android:id="@+id/next_R_293"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textAppearance="@style/nottitreservice" />
+            </TableRow>
+
+            <TableRow>
+
+                <QuickContactBadge
+                    android:id="@+id/QuickContactBadge01"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/logo_ratp" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Bus 132"
+                    android:textAppearance="@style/nottitreserviceperso" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dip"
+                    android:text="Attente" android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dip"
+                    android:text="Prochain" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/direct_a_132"
+                    android:layout_column="1"
+                    android:padding="3dp"
+                    android:text="Cite Moulin Vert" />
+
+                <TextView
+                    android:id="@+id/now_A_132"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textAppearance="@style/nottitreservice" />
+
+                <TextView
+                    android:id="@+id/next_A_132"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textAppearance="@style/nottitreservice" />
+            </TableRow>
+
+            <TableRow android:id="@+id/direct_r_132" >
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dp"
+                    android:text="Biblioth F. Miterrand" />
+
+                <TextView
+                    android:id="@+id/now_R_132"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textAppearance="@style/nottitreservice" />
+
+                <TextView
+                    android:id="@+id/next_R_132"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="" 
+                    android:textAppearance="@style/nottitreservice"/>
+            </TableRow>
+
+            <TextView
+                android:id="@+id/titre_meteo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Météo"
+                android:textAppearance="@style/Titreservice" />
+
+            <WebView
+                android:id="@+id/webmeteo"
+                android:layout_width="match_parent"
+                android:layout_height="65dp" />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pollution d&apos;Air"
+                    android:textAppearance="@style/Titreservice" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Indice" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Polluant" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Niveau" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aujourd&apos;hui" />
+
+                <TextView
+                    android:id="@+id/indiceauj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:textAppearance="@style/nottitreservice" />
+
+                <TextView
+                    android:id="@+id/polluantauj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:textAppearance="@style/nottitreservice" />
+
+                <TextView
+                    android:id="@+id/niveauauj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:textAppearance="@style/nottitreservice" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Demain" />
+
+                <TextView
+                    android:id="@+id/indicedem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:textAppearance="@style/nottitreservice" />
+
+                <TextView
+                    android:id="@+id/polluantdem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:textAppearance="@style/nottitreservice" />
+
+                <TextView
+                    android:id="@+id/niveaudem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:textAppearance="@style/nottitreservice" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="InfoTrafic" 
+             android:textAppearance="@style/Titreservice"/>
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

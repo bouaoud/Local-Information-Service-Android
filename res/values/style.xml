@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Titreservice" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/Colorvert</item>
+        <item name="android:textSize">@dimen/titleicon</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:typeface">serif</item>
+         </style>
+        <style name="nottitreservice" parent="@android:style/TextAppearance">
+       
+        <item name="android:textSize">@dimen/Nottitleicon</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:typeface">serif</item>
+    </style>
+    <style name="nottitreserviceperso" parent="@android:style/TextAppearance">
+       <item name="android:textColor">@color/bleu</item>
+        <item name="android:textSize">@dimen/Nottitleicon</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:typeface">serif</item>
+        </style>
+        
+</resources>
